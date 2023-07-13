@@ -1,0 +1,59 @@
+
+*{
+  background-color: rgb(247, 83, 83);
+  margin-top: 2rem;
+}
+
+.mainDiv{
+  display: flex;
+  flex-direction: row;
+  min-height: 80vh;
+}
+
+canvas{
+  position: absolute;
+  top: 10vh;
+  left: 60vw;
+}
+
+.controlDiv{
+  display: flex;
+  flex-direction: column;
+  min-width: 40%;
+  padding: 2rem;
+}
+
+.controlDiv button{
+  background-color: rgb(11, 17, 17);
+  margin: 2rem 0 3rem 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(207, 206, 206);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+
+.controlDiv button:hover{
+  background-color: rgb(20, 31, 31);
+  font-size: 1.6rem;
+}
+
+.controlDiv button:active{
+  background-color: white;
+  color: black;
+}
+
+
+@media only screen and (max-width: 1000px){
+  canvas{
+    position: relative;
+    left: 15%;
+    margin-bottom: 10rem;
+  }
+
+  .controlDiv{
+    margin: 0 auto;
+  }
+}
